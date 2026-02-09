@@ -1,0 +1,98 @@
+{
+    "name": "FLECHITAS",
+    "maps": [
+        {
+            "name": "Movimiento",
+            "id": "8c6c91f6-3dd7-4838-97e6-97a782c3a9a6",
+            "actions": [
+                {
+                    "name": "movimientoJug",
+                    "type": "Value",
+                    "id": "1b131d58-7dd7-42f2-80ad-39ba4e171319",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "chutar",
+                    "type": "Button",
+                    "id": "8a479f10-8172-4a96-b7be-1d5a8cd8a0c4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "34c7b684-9fe0-43ad-9142-1ec9d178410b",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movimientoJug",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "96428554-5772-4a30-a2a5-d034ee1bab17",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movimientoJug",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "cb210107-69d1-416d-9a73-5f5bbc78a736",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movimientoJug",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "45dc4f32-aa0b-484d-b347-5495a4644196",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movimientoJug",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "3974982f-6afc-40fd-a901-b2019af940cd",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "movimientoJug",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2468f3b2-877c-426c-a6dd-1891f394f0f0",
+                    "path": "<Keyboard>/numpad0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "chutar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
