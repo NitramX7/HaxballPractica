@@ -9,6 +9,11 @@ public class UIManager : MonoBehaviour
     [Header("Animación Gol")]
     public TMP_Text goalText; // Texto central (¡GOL!)
     public float animationDuration = 2f;
+    [Header("Audio Gol")]
+public AudioSource goalAudio;
+public AudioClip goalClip;
+
+
     // Actualiza los textos del marcador
     public void UpdateScore(int score1, int score2)
     {
@@ -16,8 +21,17 @@ public class UIManager : MonoBehaviour
         if (scoreTextP2 != null) scoreTextP2.text = score2.ToString();
     }
     // Muestra la animación de gol
+    // Este método se llama cada vez que hay un gol
     public void ShowGoalAnimation(string scorerName)
     {
+        
+        bool enabled = PlayerPrefs.GetInt("goal_sound_enabled", 1) == 1;
+        if (enabled && goalAudio != null && goalClip != null)
+        {
+            goalAudio.PlayOneShot(goalClip);
+        }
+
+        // Mostrar texto animado en pantalla
         if (goalText != null)
         {
             goalText.text = "¡GOL de " + scorerName + "!";

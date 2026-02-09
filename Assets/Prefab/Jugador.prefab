@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2223537873314234433}
   - component: {fileID: 1710055254713350612}
+  - component: {fileID: -179036534013134481}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -91,3 +92,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-179036534013134481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6399223108459415690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a4d674b2ff8d41aed7cb153bf5011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Jugador
+  velocidad: 10
+  fuerzaChut: 40
+  radioChut: 0.1
+  playerId: 1
+  fieldSprite: {fileID: 0}
+  outsideMargin: 0.3
+  playerRadius: 0.4
